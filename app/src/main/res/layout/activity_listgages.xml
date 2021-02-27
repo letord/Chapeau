@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/linearLayout"
+              android:orientation="vertical"
+              android:gravity="center_horizontal"
+              android:background="@color/colorPrimary">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp">
+        ">
+        <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="0dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Tu dois.."
+                android:ems="10"
+                android:id="@+id/editTextTextPersonName"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+                android:text="Ajouter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addButton"
+                android:layout_marginRight="70dp"
+                android:layout_marginLeft="70dp"
+                android:background="#00FFFFFF"
+                android:textColor="@color/Blanc"/>
+
+    </LinearLayout>
+
+    <ListView
+            android:id="@+id/listviewgages"
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:divider="#FFFFFF"
+            android:dividerHeight="2dp"
+            android:background="@color/Blanc"
+            />
+
+
+    <Button
+            android:id="@+id/ButtonPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jouer"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="#00FFFFFF"
+            android:textColor="@color/Blanc"/>
+</LinearLayout>
