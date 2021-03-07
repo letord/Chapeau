@@ -84,12 +84,12 @@ public class ListGagesActivity extends AppCompatActivity implements ConfirmDelet
             if (i==participants.size()-1){
                 x=0;
             }
-            String message = participants.get(i).getName()+"\n"
-                    +" Tu dois "
-                    +gages.get(i).getIntitule()+" "+participants.get(x).getName();
+            String message = participants.get(i).getName()+",\n"
+                    +"Tu dois "
+                    +gages.get(i).getIntitule()+participants.get(x).getName();
             String destinataire = participants.get(i).getNumber();
             SendMessage(destinataire, message);
-            controle.ajoutSMS(participants.get(i).getName(), " Tu dois "+gages.get(i).getIntitule()+participants.get(x).getName(), participants.get(x).getName());
+            controle.ajoutSMS(participants.get(i).getName(), ", Tu dois "+gages.get(i).getIntitule()+participants.get(x).getName(), participants.get(x).getName());
         }
         retourMainActivity();
     }

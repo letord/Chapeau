@@ -8,20 +8,23 @@
               android:gravity="center_horizontal">
 
     <ImageView android:layout_width="200dp"
-               android:layout_height="400dp"
+               android:layout_height="500dp"
                app:srcCompat="@drawable/ic_chapeau"/>
 
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" android:layout_gravity="center" android:gravity="center">
+            android:layout_height="match_parent" >
         <Button
                 android:text="New Game"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/buttonNewGame"
                 android:layout_gravity="center"
-                android:gravity="center" android:background="#00FFFFFF" android:textColor="@color/Blanc"/>
+                android:layout_marginBottom="60dp"
+                android:gravity="center"
+                android:background="#00FFFFFF"
+                android:textColor="@color/Blanc"/>
         <Button
                 android:text="Partie en cours"
                 android:layout_width="match_parent"
